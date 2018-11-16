@@ -1,0 +1,39 @@
+\documentclass{article}
+
+\usepackage{tikz-qtree}
+
+\title{Goal Hierarchy}
+\date{2018-11-15}
+\author{Andrew Dang-Tran}
+
+\begin{document}
+
+\maketitle
+
+\begin{tikzpicture}
+\Tree 
+[.\node (level0-right) {S}; 
+  [.NP 
+    [.Det \node (level3-left) {the}; 
+    ] 
+    [.N cat 
+    ] 
+  ]
+  [.\node (level1-right) {VP}; 
+    [.V sat 
+    ]
+    [.\node (level2-right) {PP}; 
+      [.P on 
+      ]
+      [.\node (level3-right) {NP}; 
+        [.Det the 
+        ] 
+        [.\node (level4-right) {N}; \node (level5-right) {mat}; 
+        ] 
+      ]
+    ] 
+  ] 
+]
+\end{tikzpicture}
+
+\end{document}
