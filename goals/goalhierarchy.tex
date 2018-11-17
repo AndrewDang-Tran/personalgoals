@@ -3,37 +3,43 @@
 \usepackage{tikz-qtree}
 
 \title{Goal Hierarchy}
-\date{2018-11-15}
+\date{2018-11-17}
 \author{Andrew Dang-Tran}
 
 \begin{document}
 
 \maketitle
 
+\hfil
 \begin{tikzpicture}
 \Tree 
-[.\node (level0-right) {S}; 
-  [.NP 
-    [.Det \node (level3-left) {the}; 
+[.\node (level0-left) {To live a happy and fulfilling life};
+  [.\node (level1-left) {Social};
+    [.Family
     ] 
-    [.N cat 
+    [.Friends
     ] 
-  ]
-  [.\node (level1-right) {VP}; 
-    [.V sat 
+    [.Dating
     ]
-    [.\node (level2-right) {PP}; 
-      [.P on 
+  ]
+  [.Passion
+    [.\node (level2-left) {Discovery};
+      [.\node (level3-left) {Try something new each month};
       ]
-      [.\node (level3-right) {NP}; 
-        [.Det the 
-        ] 
-        [.\node (level4-right) {N}; \node (level5-right) {mat}; 
-        ] 
+    ]
+  ]
+  [.\node (level1-right) {Self Improvement};
+    [.\node (level2-left) {Self Reflection};
+    ]
+    [.\node (level2-right) {Side Projects};
+      [.Japanese
       ]
-    ] 
-  ] 
+      [.\node (level3-right) {Programming};
+      ]
+    ]
+  ]
 ]
-\end{tikzpicture}
+\end{tikzpicture}%
+\hfil
 
 \end{document}
